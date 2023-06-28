@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Rachumallu Revanth Raj - Portfolio</title>
+
+    <style>
+        body {
+            font-family: 'Times New Roman',Times, serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 28px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        nav ul li a:hover {
+            background-color: #555;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h2 {
+            margin-top: 0;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        .image-container {
+            display: flex;
+        }
+
+        .image-container {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1></h1>
+        <nav>
+            <ul>
+              	<li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#publications">Publications</a></li>
+                <li><a href="#honors-awards">Honors and Awards</a></li>
+                <li><a href="certificates">Certificates Gallary</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+      <section id="about">
+  <h1>RACHUMALLU REVANTH RAJ</h1>
+  <img src="res_photo.jpg" alt="Profile Photo" width="200" height="200">
+  <p>Email: <a href="mailto:revanthrajplace@gmail.com">revanthrajplace@gmail.com</a></p>
+    <p>Mobile:<a href="tel:+917095901734"> +91 7095901734</a></p>
+  <p>LinkedIn: <a href="https://www.linkedin.com/in/rachumallu-revanth-raj-0006771b7/?originalSubdomain=in">linkedin.com/rachumallu-revanth-raj</a></p>
+  <p>GitHub: <a href="https://github.com/29revanthraj">github.com/29revanthraj</a></p>
+    
+</a>
+</section>
+        <section id="education">
+            <h2>Education</h2>
+            <ul>
+                <li>
+                    <h3>B.Tech - Kalasalingam Academy of Research and Education [2020 - 2024]</h3>
+                    <p>CSE with specialization in AI and ML;
+                    <p>CGPA: 9.13 (till 6th semester)</p>
+                    <p>Courses: Operating Systems, Data Structures, Analysis Of Algorithms, Artificial Intelligence, Machine Learning, Networking, Databases</p>
+                </li>
+                <li>
+                    <h3>Intermediate - Narayana junior college [2018 - 2020]</h3>
+                    <p>MPC; CGPA - 9.7/10</p>
+                </li>
+                <li>
+                    <h3>Secondary Education (SSC) - Sri Chaitanya Techno School [2017 - 2018]</h3>
+                    <p>GPA - 10/10 </p>
+                </li>
+            </ul>
+        </section>
+
+        <section id="skills">
+            <h2>Skills Summary</h2>
+            <ul>
+                <li>Languages: Python (Proficient), SQL (Proficient), Java (Basic)</li>
+                <li>Libraries: Pandas, NumPy, NLTK, TensorFlow, Keras, tkinter</li>
+                <li>Tools: MySQL, Power BI</li>
+                <li>Soft Skills: Time Management, Problem Solving, Communication Skills, Flexibility, Ability to work independently</li>
+            </ul>
+        </section>
+
+        <section id="experience">
+            <h2>Experience</h2>
+            </div>
+            <div class="image-container">
+                <img src="PricewaterhouseCoopers_Logo.png" alt="Image 2" width="200" height="200">
+                <img src="mcw.png" alt="Image 1" width="320" height="200">
+            </div>
+            <ul>
+                <li>
+                    <h3>Engineering Trainee intern - Remote [Mar 2023 - Present]</h3>
+                    <p>Company : Price Waterhouse Coopers (PWC)</p>
+                    <p>Skills: IT fundamentals, RDBMS, programming fundamentals (Python), Data engineering</p>
+                </li>
+                <li>
+                    <h3>Research and development intern - Remote [Sep 2022 - Present]</h3>
+                    <p>Company : Multicoreware Inc.</p>
+                    <p>Skills: Sensor Fusion, Python Programming, Computer Vision, Artificial intelligence and Machine Learning</p>
+                    <p>Impact: Developed and implemented innovative solutions for autonomous vehicle through sensor fusion, resulting in improved performance and efficiency.</p>
+                </li>
+            </ul>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <ul>
+                <li>
+                    <h3>Harvest-Helper :</h3>
+                    <p>A farmer-friendly website created to help them with crop, fertilizer recommendation, and crop disease identification.</p>
+                    <p>Tech: Python, HTML, CSS, Flask, Weather API, Machine Learning, and Deep Learning (March '23)</p>
+                </li>
+                <li>
+                  
+                  
+                    <h3>Uber Fare prediction :</h3>
+                    <p>Developed a prediction-based model to predict the Uber cab fares for different vehicles based on distances.</p>
+                    <p>Tech: Java Swing, Machine Learning (December '22)</p>
+                  
+                  </li>
+                <li>
+                  <h3>3D object detection (Camera, Radar):</h3> <p>(work in progress) 3D object detection for autonomous vehicles integrates camera
+and radar systems to accurately detect and locate objects in the vehicle’s surroundings enables safe navigation and
+decision-making in AV.</p> 
+                  <p>Tech: Python, Sensor fusion, Opencv, RTCnet, CNN, Machine learning and deep learning.(Sep ’22)</p>
+                  </li>
+                <li>
+<h3>Text extraction from multimedia:</h3> <p>Built a GUI based application to extract text from images,audio,videos and generate
+QR code’s.</p><p>Tech: Python, Tkinter, Pytesseract, Wave, Moviepy, Speech recognition, Pyttsx3, Pyqrcode,PIL (April ’22)</p>
+                  </li>
+                <li>
+<h3>Drowsiness detection of driver and alert system:</h3><p>Developed a drowsiness detection system to alert the driver when he
+feel drowsy and driver location is tracked.<p>Tech: OpenCv, dlib, geocoder, winsound, smtplib, ssl (November ’21)</p>
+                  </li>
+                <li>
+<h3>Talking Dictionary: </h3><p>Built a GUI based dictionary application which provide audio and text meanings for the entered word.</p><p>
+Tech: Python, tkinter, json, difflib, pyttsx3 ( May ’21)
+                  </p>
+                  
+                </li>
+            </ul>
+        </section>
+
+        <section id="publications">
+            <h2>Publications</h2>
+            <ul>
+                <li>
+                    <h3>Research Paper: An Automated Cost Prediction in Uber/Call Taxi Using Machine Learning Algorithm</h3>
+                    <p>Tech: Java, Machine Learning (July '22)</p>
+                </li>
+            </ul>
+        </section>
+
+        <section id="honors-awards">
+            <h2>Honors and Awards</h2>
+            <ul>
+                <li>Runner at intercollegiate Technical paper presentation KARE</li>
+                <li>Achieved 5 star badge in Python and SQL from Hacker Rank</li>
+                <li>Achieved IT Fundamentals, RDBMS and programming Fundamentals (Python) badges from PWC</li>
+            </ul>
+        </section>
+
+    </main>
+</body>
+
+</html
