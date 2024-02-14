@@ -29,13 +29,6 @@
             margin: 20px;
             display: block;
         }
-
-        video {
-            width: 600px;
-            max-width: 100%;
-            border: 2px solid #ccc;
-            border-radius: 5px;
-        }
         .download-button {
             padding: 8px 8px;
             background-color: #4CAF50;
@@ -44,11 +37,60 @@
             border-radius: 4px;
             /* margin: 2px; */
         }
+        video {
+            width: 800px;
+            max-width: 100%;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+        }
         footer {
 	        background-color: #333;
 	        color: white;
 	        padding: 10px;
 	        text-align: center;
+        }
+
+        .slider {
+            width: 65%;
+            margin: 0 auto;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .slides {
+            display: flex;
+            transition: transform 0.5s ease;
+        }
+
+        .slide {
+            min-width: 100%;
+            flex: 1;
+        }
+
+        .slide img {
+            width: 100%;
+            height: auto;
+        }
+
+        .btn {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            padding: 10px;
+            background: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            outline: none;
+            z-index: 2;
+        }
+
+        .prev {
+            left: 0;
+        }
+
+        .next {
+            right: 0;
         }
     </style>
 </head>
@@ -57,7 +99,7 @@
         <a class="download-button" href="index.html"> Home Page </a>
     </ul>
     <header>
-        <h1><i>PROJECT'S DEMO</i></h1>
+        <h1>PROJECT'S DEMO</h1>
     </header>
     <main>
         <div class="video-container">
@@ -109,6 +151,54 @@
             </video>
         </div>
     </main>
+    <div class="slider">
+    <h1><i>Power BI Dashboards</i></h1>
+        <div class="slides">
+            <div class="slide"><img src="BI\image1.png" alt="Image 1"></div>
+            <div class="slide"><img src="BI\image2.png" alt="Image 2"></div>
+            <div class="slide"><img src="BI\image3.png" alt="Image 3"></div>
+            <div class="slide"><img src="BI\image4.png" alt="Image 4"></div>
+            <div class="slide"><img src="BI\image5.png" alt="Image 5"></div>
+        </div>
+    <button class="btn prev" onclick="prevSlide()">Prev</button>
+    <button class="btn next" onclick="nextSlide()">Next</button>
+    </div>
+
+    <script>
+    let slideIndex = 0;
+    const slides = document.querySelectorAll('.slide');
+
+    function showSlides() {
+        slides.forEach(slide => slide.style.display = "none");
+        slideIndex++;
+        if (slideIndex > slides.length) {
+        slideIndex = 1;
+        }
+        slides[slideIndex - 1].style.display = "block";
+        setTimeout(showSlides, 5000); // Change image every 2 seconds
+    }
+
+    function prevSlide() {
+        if (slideIndex === 1) {
+        slideIndex = slides.length;
+        } else {
+        slideIndex--;
+        }
+        showSlides();
+    }
+
+    function nextSlide() {
+        if (slideIndex === slides.length) {
+        slideIndex = 1;
+        } else {
+        slideIndex++;
+        }
+        showSlides();
+    }
+
+    showSlides();
+    </script>
+
     <footer>
         <p>© 2023 Revanth Raj's page. All rights reserved. <br> Send us your feedback to <a href="mailto:revanthrajplace@gmail.com">revanthrajplace@gmail.com</a></p>
     </footer>
